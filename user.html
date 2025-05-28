@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+     <div class="nav">
+        <div class="left"><img src="./images/logo.png" alt="">
+            <span class="name">foodpanda</span>
+        </div>
+        <div class="center">
+            <input id="serachitem" class="search" type="search" placeholder="Search items">
+            <div onclick="serach()" class="iconsearch"> <i class="fas fa-search"></i></div>
+        </div>
+        <div class="right">
+            <p class="user"><i class="far fa-user" style="font-size: 24px;"></i>
+<span id="spanname" class="username">Yasir Khan </span></p>
+            <div class="lang">
+                <i class="fa-solid fa-globe"><span class="icname">EN</span></i>
+               <span class="arrowo"> <i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div onclick="addcart()" class="count"><div class="bagu"><i class="fa-solid fa-bag-shopping"></i></div>
+            <div class="circle">
+                <span id="count" class="counter">0</span>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="mainuser">
+        <div class="mleft">
+            <h1>Food and groceries delivery from Karachi’s best restaurants and shops
+</h1>
+            <br>
+            
+        </div>
+        <div class="container"><img class="panda" src="./images/panada2.png" alt=""></div>
+    </div>
+    <h1 class="resturant">
+        All resturants Items..
+        <i class="fas fa-utensils" style="font-size: 24px;"></i>
+
+    </h1>
+
+    <div id="usercard" class="cardmain">
+       
+        
+        <div class="cards">
+<div class="foodimg"><img src="https://c.ndtvimg.com/pxnvr8gg3bg_barbecue_625x300.jpg?im=FaceCrop,algorithm=dnn,width=620,height=350" ></div>
+<div class="desc">
+    <h1 class="restname">Norani resturant</h1>
+<li><span class="fodname">Special BBQ</span></li>
+<li><span class="rate">Rs: <span class="rs">3000</span></span></li>
+<p class="para">Freshly prepared and packed with flavor, this dish is a customer favorite! Perfect for quick lunches or cozy dinners at home. Delivered hot and ready — just the way you like it. One bite, and you’ll be back for more!</p>
+<button onclick="addtocart()" class="add">Add To Cart</button>
+</div>
+        </div>
+        
+        <div class="cards">
+<div class="foodimg"><img src="https://img.lovepik.com/photo/48039/9091.jpg_wh860.jpg" ></div>
+<div class="desc">
+    <h1 class="restname">Kabab cheize</h1>
+<li><span class="fodname">Cheize Burger</span></li>
+<li><span class="rate">Rs: <span class="rs">1500</span></span></li>
+<p class="para">Freshly prepared and packed with flavor, this dish is a customer favorite! Perfect for quick lunches or cozy dinners at home. Delivered hot and ready — just the way you like it. One bite, and you’ll be back for more!</p>
+<button onclick="addtocart()" class="add">Add To Cart</button>
+</div>
+        </div>
+
+        
+        <div class="cards">
+<div class="foodimg"><img src="https://media.istockphoto.com/id/184946701/photo/pizza.jpg?s=612x612&w=0&k=20&c=97rc0VIi-s3mn4xe4xDy9S-XJ_Ohbn92XaEMaiID_eY=" ></div>
+<div class="desc">
+    <h1 class="restname">Broadway Pizza</h1>
+<li><span class="fodname">Chicken Tikka Pizza</span></li>
+<li><span class="rate">Rs: <span class="rs">2500</span></span></li>
+<p class="para">Freshly prepared and packed with flavor, this dish is a customer favorite! Perfect for quick lunches or cozy dinners at home. Delivered hot and ready — just the way you like it. One bite, and you’ll be back for more!</p>
+<button onclick="addtocart()" class="add">Add To Cart</button>
+</div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

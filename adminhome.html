@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+     <div class="nav">
+        <div class="left"><img src="./images/logo.png" alt="">
+            <span class="name">foodpanda</span>
+        </div>
+        <div class="centername">
+            <p class="hi">Hi,  <span id="adminhi" class="yourname">Your Name</span> <div class="text-7xl wave-hand">👋</div></p>
+        </div>
+        <div class="right">
+            <button onclick="logoutadmin()" class="login">Logout.. <i class="fas fa-sign-out-alt logout-icon"></i></button>
+            <div class="lang">
+                <i class="fa-solid fa-globe"><span class="icname">EN</span></i>
+               <span class="arrowo"> <i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+           
+        </div>
+    </div>
+    <div class="mainadmin">
+        <div class="mleftadmin">
+            <h1>Welcome To The, <span id="resname" class="resname">Kabab Chize </span> Resturante!
+</h1>
+<div class="bottomimg">
+    <img src="https://profit.pakistantoday.com.pk/wp-content/uploads/2023/06/Foodpanda-1024x767.png" alt="">
+</div>
+        </div>
+        <div class="inputs">
+            <h1 class="additem">Add Items</h1>
+            <br>
+            <label class="label">Resturante Name</label><br>
+<input id="inpresname" class="inp" type="text" placeholder="Enter Your Resturante Name"><br><br>
+
+            <label class="label">Item Name</label><br>
+<input id="inpitem" class="inp" type="text" placeholder="Enter Item Name"><br><br>
+
+            <label class="label">Price</label><br>
+<input id="inpprice" class="inp" type="number" placeholder="Enter Price"><br><br>
+            <label class="label">ImageURL</label><br>
+<input id="img" class="inp" type="url" placeholder="Paste image URL"><br><br>
+
+
+
+<button onclick="additemss()" class="addbtn">Add item</button>
+
+
+        </div>
+    </div>
+    <h1 class="resturant">
+        Your resturants Items..
+        <i class="fas fa-utensils" style="font-size: 24px;"></i>
+
+    </h1>
+
+    <div id="cardmain" class="cardmain">
+        <div class="cards">
+<div class="foodimg"><img src="https://t3.ftcdn.net/jpg/02/52/38/80/360_F_252388016_KjPnB9vglSCuUJAumCDNbmMzGdzPAucK.jpg" ></div>
+<div class="desc">
+    <h1 class="restname">Chines Resturante</h1>
+<li><span class="fodname">Chines Plao</span></li>
+<li><span class="rate">Rs: <span class="rs">1000</span></span></li>
+<p class="para">Freshly prepared and packed with flavor, this dish is a customer favorite! Perfect for quick lunches or cozy dinners at home. Delivered hot and ready — just the way you like it. One bite, and you’ll be back for more!</p>
+<div class="btnmain"></div><button onclick="deletee()" class="udelete">Delete</button></div>
+</div>
+
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

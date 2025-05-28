@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Signup - Food App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092'); /* You can change the background image */
+      background-size: cover;
+      background-position: center;
+    }
+    .bg-blur {
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-fixed">
+  <div class="bg-blur shadow-2xl rounded-2xl p-8 w-full max-w-md text-white">
+    <h2 class="text-3xl font-bold text-center mb-6">🍔 Admin Signup</h2>
+    <div id="adminSignupForm" class="space-y-4">
+      <div>
+        <label class="block text-sm font-medium">Full Name</label>
+        <input id="adminname" type="text" required class="mt-1 w-full p-2 rounded-md text-black" placeholder="Enter full name" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Email</label>
+        <input id="adminemail" type="email" required class="mt-1 w-full p-2 rounded-md text-black" placeholder="Enter email" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Password</label>
+        <input type="password" id="adminpassword" required class="mt-1 w-full p-2 rounded-md text-black" placeholder="Enter password" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Restaurant Name</label>
+        <input type="text" id="restaurantName" required class="mt-1 w-full p-2 rounded-md text-black" placeholder="Your Restaurant" />
+      </div>
+      <button onclick="adminsignup()"  class="w-full bg-pink-600 hover:bg-pink-700 text-white p-2 rounded-md font-semibold transition duration-300">
+        Sign Up as Admin
+      </button>
+    </div>
+    <p class="text-center text-sm text-white mt-4">Already have an account? <a href="adminlogin.html" class="text-pink-800 hover:underline">Login here</a></p>
+  </div>
+
+   <script src="script.js"></script>
+</body>
+</html>

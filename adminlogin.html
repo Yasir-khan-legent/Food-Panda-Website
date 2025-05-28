@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Login - Food App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
+      background-size: cover;
+      background-position: center;
+    }
+    .bg-blur {
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-fixed">
+  <div class="bg-blur shadow-2xl rounded-2xl p-8 w-full max-w-md text-white">
+    <h2 class="text-3xl font-bold text-center mb-6">🔐 Admin Login</h2>
+    <div id="adminLoginForm" class="space-y-4">
+      <div>
+        <label class="block text-sm font-medium">Email</label>
+        <input type="email" id="adminloginemail" required class="mt-1 w-full p-2 rounded-md text-black" placeholder="Enter email" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Password</label>
+        <input type="password" id="adminloginpassword" required class="mt-1 w-full p-2 rounded-md text-black" placeholder="Enter password" />
+      </div>
+      <button onclick="adminlogin()" type="submit" class="w-full bg-pink-600 hover:bg-pink-700 text-white p-2 rounded-md font-semibold transition duration-300">
+        Login
+      </button>
+    </div>
+    <p class="text-center text-sm text-white mt-4">Don't have an account? <a href="adminsign.html" class="text-pink-900 hover:underline">Signup here</a></p>
+  </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
